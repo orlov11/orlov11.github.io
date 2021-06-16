@@ -1,0 +1,103 @@
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+.repairs
+    &__brands
+        &--noswiper
+            @media  ( max-width: 767px )
+                display: none
+                
+        height: 160px
+        margin-left: 20px
+        @media  ( min-width: 767px )
+            height: auto
+    &__header
+        padding: 16px 
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        color: #7E7E82;
+        margin-left: 16px
+        @media  ( min-width: 767px )
+            margin-left: 24px
+
+    &__wrapper
+        &--noswiper
+            gap: 16px
+            padding: 16px
+            display: flex
+            overflow: auto
+            @media  ( min-width: 767px )
+                padding: 24px 24px 0 24px
+                flex-wrap: wrap
+                max-height: 200px
+                gap: 16px 24px
+            @media  ( min-width: 1119px )
+                padding: 24px 32px 0 32px
+                gap: 16px 32px
+
+    &__item
+        align-items: center
+        display: flex
+        width: 240px 
+        // margin: 0 16px
+        height: 72px
+        border: 1px solid #EAEAEA
+        border-radius: 5px
+        justify-content: space-between
+        flex: 0 0 auto
+        @media  ( min-width: 767px )
+            width: 224px
+
+    &__icon 
+        img
+            margin-left: 16px
+
+    &__btn
+        border-radius: 100%
+        width: 40px
+        height: 40px
+        background-color: transparent
+        border: 1px solid red
+    &__show
+        display: none
+        @media  ( min-width: 767px  )
+            display: block
+            width: 133px
+            height: 74px
+            background-color: transparent
+            border: none
+            margin-left: 31px
+            img
+                margin-right: 18px
+            &--hidden
+                display: none
+                img
+                 transform: rotate(180deg)
+        &--hidden
+            display: none
+                
+.dots
+    @media ( max-width: 767px  )
+        width: 205px
+        height: 14px
+        margin: 17px auto
+        &__item
+            width: 12px
+            height: 12px
+            background-color: #DDDDDD
+            border-radius: 100%
+            &--active
+                background-color: #B5B6BC
+
+
+
+
+.swiper-container,
+.swiper-pagination,
+    
+    @media  ( min-width: 767px )
+        display: none
+        
