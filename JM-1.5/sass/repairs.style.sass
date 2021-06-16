@@ -5,14 +5,17 @@
 
 .repairs
     &__brands
+        height: 160px
+        margin-left: 20px
         &--noswiper
             @media  ( max-width: 767px )
                 display: none
+                margin-left: 0px
+
                 
-        height: 160px
-        margin-left: 20px
         @media  ( min-width: 767px )
             height: auto
+            margin: 0
     &__header
         padding: 16px 
         font-size: 16px
@@ -48,12 +51,10 @@
         border-radius: 5px
         justify-content: space-between
         flex: 0 0 auto
+        padding: 0 16px
         @media  ( min-width: 767px )
             width: 224px
 
-    &__icon 
-        img
-            margin-left: 16px
 
     &__btn
         border-radius: 100%
