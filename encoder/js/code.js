@@ -1,7 +1,7 @@
 const letters = [ 'й', 'ц', 'у', 'к', 'е', 'н', 'г', 'ш', 'щ', 'з', 'х', 'ъ', 'ф', 'ы', 'в', 'а', 'п', 'р', 'о', 'л', 'д', 'э', 'я', 'ч', 'с', 'м', 'и', 'т', 'ь', 'б', 'ю', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.',',', 'ж',
 ' ']
 
-const code = ['1', '2', '3', '4', '5', '6','7', '8',' 9', '0', '<', 'Q', '{', ':', '+', '(', ')', 'P', '&', 'A', '>', '_' , '@', '?', '!', '|', '=', '*', '^', '$', '}', '#', 'I', 'O', 'l', 'v', 'c', 't', 'q', 'm', 'e','%', 'y', '"',' ']
+const code = ['1', '2', '3', '4', '5', '6','7', '8',' 9', '0', '<', 'Q', '{', ':', '+', '(', ')', 'P', '&', 'A', '>', '_' , '@', '?', '!', '|', '=', '*', '^', '$', '}', '#', 'I', 'O', 'l', 'v', 'c', 't', 'q', 'm', 'e','%', 'y', '"','№']
 
 
 const resEn = document.querySelector('#encryption__res'),
@@ -18,7 +18,6 @@ function encryption(str){
     str=  str.toLowerCase()
     let arr2 = str.split('')
     
-    console.log(arr2)
     let res = []
     
     arr2.forEach( i =>{
@@ -29,17 +28,6 @@ function encryption(str){
     return res
 
 }
-
-encryption('как дела?')
-
-
-
-
-
-
-
-
-//  '<br>'+ val.substr(51,70) + '<br>'+ val.substr(71,90) + '<br>' +
 
 
 function decryption(str){
@@ -71,7 +59,6 @@ function myWrap(val){
 
 
 
-encryption(textEn.value)
 
 
 btnEnc.addEventListener('click', ()=>{
@@ -84,6 +71,6 @@ btnEnc.addEventListener('click', ()=>{
 
 btnDec.addEventListener('click', ()=>{
 
+
     divDs.innerHTML = myWrap(decryption(textDec.value))
 })
-
