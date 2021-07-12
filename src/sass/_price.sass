@@ -1,0 +1,201 @@
+.price
+    .swiper-container
+        @media  ( min-width: 767px  )
+            display: none        
+    &__header
+        padding: 16px
+        font-size: 16px
+        line-height: 24px
+        text-transform: uppercase
+        color: #7E7E82
+        margin-bottom: 31px
+        @media ( min-width: 320px )
+            padding-left: 16px
+        @media ( min-width: 767px )
+            padding-left:  24px
+    &__wrapper
+        display: flex
+        margin-bottom: 44px
+        @media  ( min-width: 767px  )
+            display: block
+            overflow: hidden
+            margin: 0 24px
+            margin-bottom: 24px
+        &--no_swiper
+            @media  ( min-width: 100px  )
+                display: none
+            @media  ( min-width: 767px  )
+                display: block
+                
+    
+            
+            
+    &__item
+        display: flex
+        flex: 0 0 auto
+        position: relative
+        flex-direction: column
+        width: 260px
+        height: 200px
+        margin-left: 6px
+        padding: 16px 0 20px 16px
+        @media  ( min-width: 767px  )
+            font-size: 14px
+            width: auto
+            justify-content: space-between
+            height: 64px
+            flex: 0 0 auto
+            flex-direction: row
+            padding: 23px 16px
+    &__item:not(:last-of-type)
+        border-bottom: 1px solid #EAEAEA
+        
+            
+    &__title
+        font-size: 14px
+        line-height: 16px
+        color: #7E7E82
+        @media  ( min-width: 320px  )
+            margin-bottom: 4px
+ 
+            
+
+    &__services, 
+    &__price
+        margin-bottom: 16px
+    &__title
+        @media ( min-width:767px  )
+            display: none
+            
+
+    &__services
+        @media  ( min-width: 100px  )
+            width: 228px
+        @media  ( min-width: 767px )     
+             width: 345px
+        
+    &__time
+        @media ( min-width: 767px )
+            width: 110px
+            text-align: left
+        
+
+    &__btn
+        width: 119px
+        height: 32px
+        border-radius: 16px
+        background-color: #FF3E79
+        padding: 4px 0 4px 12px
+        border: none
+        font-size: 12px;
+        line-height: 24px
+        text-align: left
+        text-transform: uppercase
+        color: #FFFFFF
+        position: absolute
+        right: 16px
+        bottom: 24px
+        @media  ( min-width: 767px  )
+            position: static
+            align-self: center
+    &__commerce
+        padding-left: 16px
+        padding-bottom: 40px
+        font-size: 16px
+        color: #1B1C21
+        @media  ( min-width: 767px  )
+            padding-left: 24px
+            
+    &__descr
+        font-size: 14px
+        line-height: 20px
+        color: #1B1C21
+        @media  ( min-width:100px )
+            width: 288px
+            height: 138px
+        @media ( min-width: 767px  )
+            width: 421px
+            height: 60px
+            margin-bottom: 16px
+    &__offer a
+        font-size: 16px
+        color: #1B1C21
+        text-decoration: none
+        @media ( min-width: 100px  )
+            width: 192px
+            height: 54px
+        @media  ( min-width: 767px  )
+            width: auto
+            height: auto        
+            
+    
+.name
+    @media  ( min-width: 100px  )
+        display: none
+        
+    @media  ( min-width: 767px  )
+        display: grid
+        grid-auto-flow: column
+        margin-left: 24px
+        font-size: 14px
+        line-height: 16px
+        color: #7E7E82
+        mix-blend-mode: normal
+        opacity: 0.72
+        margin-bottom: 16px
+        &__service
+            width: 295px
+        &__price
+            width: 117px
+            margin-left: -30px
+        &__time
+            margin-left: -160px
+        
+
+
+.footer
+    font-size: 14px
+    text-align: center
+    color: #7E7E82
+    opacity: 0.72
+    &__wrapper
+        @media  ( min-width: 1366px  )
+            max-width: 1440px
+            margin: 0 auto
+            
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        gap: 16px
+        @media  ( min-width:100px  )
+            padding: 16px 0 19px 0
+        @media  ( min-width: 767px  )
+            flex-direction: row
+            padding: 32px 24px 25px 24px
+            
+    &__dev
+        width: 218px
+        height: 32px
+        text-align: center
+        @media  ( min-width: 767px  )
+            width: 219px
+            height: 32px
+            text-align: left
+    &__politic
+        a
+            color: #7E7E82
+            text-decoration: none
+
+    &__offerta
+        width: 312px
+        height: 32px
+        text-align: center
+        @media  ( min-width: 767px )
+            width: 213px
+            height: 48px
+            text-align: right
+            
+
+            
+            
