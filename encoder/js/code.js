@@ -13,8 +13,9 @@ const resEn = document.querySelector('#encryption__res'),
       textDec = document.querySelector('.decryption__input'),
       divEn = document.querySelector('.div__en'),
       divDs = document.querySelector('.div__ds'),
-      rest = document.querySelectorAll('.rest')
-
+      rest = document.querySelectorAll('.rest'),
+      rest1 = document.querySelector('#one'),
+      rest2 = document.querySelector('#two')
 
 function encryption(str){
     str=  str.toLowerCase()
@@ -67,9 +68,11 @@ function restInput(restBtn){
         i.addEventListener('click', ()=>{
             if(item == 0){
                 textEn.value= ''
+                i.style.display = 'none'
             }
             else if(item == 1){
                 textDec.value= ''
+                i.style.display = 'none'
             }
     
         })
@@ -89,6 +92,33 @@ btnEnc.addEventListener('click', ()=>{
 btnDec.addEventListener('click', ()=>{
 
     divDs.innerHTML = myWrap(decryption(textDec.value))
+})
+
+
+textEn.addEventListener('input', ()=>{
+    console.log(rest1.value.length)
+    if (textEn.value.length  > 1){
+        console.log('dos')
+        rest1.style.display = 'block'
+        }
+
+    else if(textEn.value.length  == 0 ){
+        rest1.style.display = 'none'
+    }
+
+})
+
+textDec.addEventListener('input', ()=>{
+    console.log(rest1.value.length)
+    if (textDec.value.length  > 1){
+        console.log('dos')
+        rest2.style.display = 'block'
+        }
+
+    else if(textDec.value.length  == 0 ){
+        rest2.style.display = 'none'
+    }
+
 })
 
 

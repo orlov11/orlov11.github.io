@@ -15,7 +15,7 @@
         align-items: center
         gap: 150px
     @media  ( max-width: 768px )
-        gap: 100px
+        // gap: 100px
     
         
 .encryption, .decryption
@@ -31,6 +31,8 @@
     @media  ( max-width: 768px )
         width: 300px
         min-height: 350px
+
+        
     &__input
         width: 440px
         min-height: 55px
@@ -64,11 +66,13 @@ button
     cursor: pointer
 
 
+
 .input
     position: relative
 
 
 .rest
+    display: none
     background-color: transparent
     border: none
     cursor: pointer
@@ -79,4 +83,7 @@ button
     @media  ( min-width: 319px  )
         padding: 17px 7px 18px 8px
         right: 4px
-        
+    
+.encryption
+    @media  ( max-width: 768px  )
+        margin-bottom: 100px
