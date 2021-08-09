@@ -12,7 +12,8 @@ const resEn = document.querySelector('#encryption__res'),
       textEn = document.querySelector('.encryption__input'),
       textDec = document.querySelector('.decryption__input'),
       divEn = document.querySelector('.div__en'),
-      divDs = document.querySelector('.div__ds')
+      divDs = document.querySelector('.div__ds'),
+      rest = document.querySelectorAll('.rest')
 
 
 function encryption(str){
@@ -35,21 +36,18 @@ function decryption(str){
     let decArr = str.split('')
     let res2 = []
     
-    console.log(decArr)
-
     decArr.forEach( i =>{
-        console.log(i)
+
         res2.push(letters[code.indexOf(i)])
     
     })
-    console.log(res2)
+
     res2 = res2.join('')
     return res2
     
 
 }
 
-console.log(decryption('щщщщщ'))
 
 
 function myWrap(val){
@@ -63,6 +61,23 @@ function myWrap(val){
 
 }
 
+function restInput(restBtn){
+    restBtn.forEach((i,item)=>{
+
+        i.addEventListener('click', ()=>{
+            if(item == 0){
+                textEn.value= ''
+            }
+            else if(item == 1){
+                textDec.value= ''
+            }
+    
+        })
+    })
+}
+
+restInput(rest)
+
 
 btnEnc.addEventListener('click', ()=>{
 
@@ -75,3 +90,5 @@ btnDec.addEventListener('click', ()=>{
 
     divDs.innerHTML = myWrap(decryption(textDec.value))
 })
+
+
