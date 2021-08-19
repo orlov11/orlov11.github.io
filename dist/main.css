@@ -46,39 +46,6 @@
   .burger a {
     text-decoration: none;
     color: black; }
-  .burger .menu-min {
-    margin-bottom: 46px; }
-    .burger .menu-min__wrapper {
-      padding: 23px 24px 0 0; }
-    .burger .menu-min__logo {
-      width: 97px;
-      height: 51px; }
-    .burger .menu-min__logo::before {
-      content: none; }
-    .burger .menu-min__close .burger .menu-min__search {
-      width: 40px;
-      height: 40px; }
-    .burger .menu-min__close {
-      padding-top: 5px;
-      margin-right: 16px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap; }
-    .burger .menu-min__search {
-      margin: 0 auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 5px; }
-    .burger .menu-min__item {
-      width: 22px;
-      height: 2px;
-      background-color: #fff; }
-    .burger .menu-min__item:nth-child(1) {
-      transform: rotate(49deg) translate(5px, 6px); }
-    .burger .menu-min__item:nth-child(2) {
-      transform: rotate(131deg) translate(-7px, 8px); }
   .burger .menu__wrapper {
     display: grid;
     grid-auto-flow: row;
@@ -89,14 +56,19 @@
   .burger .menu__item a:hover {
     opacity: 0.5;
     transition-duration: 0.3s; }
-  .burger .menu__item-active::before {
+  .burger .menu__item:hover:before {
     content: '';
     position: absolute;
     width: 8px;
     height: 32px;
     background: #41F6D7;
-    border-radius: 5px;
-    transform: translate(-28px, -5px); }
+    border-radius: 5px; }
+    @media (min-width: 319px) {
+      .burger .menu__item:hover:before {
+        transform: translate(-50px, -5px); } }
+    @media (min-width: 768px) {
+      .burger .menu__item:hover:before {
+        transform: translate(-28px, -5px); } }
   .burger .contacts {
     display: grid;
     grid-auto-flow: row;
@@ -242,7 +214,10 @@
   color: #FFFFFF;
   position: absolute;
   right: 16px;
-  bottom: 24px; }
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; }
   @media (min-width: 767px) {
     .price__btn {
       position: static;
@@ -733,6 +708,10 @@ main {
   border: 2px solid #B8FFEC;
   border-radius: 6px; }
 
+.opportunities__item:hover {
+  border: 2px solid #B8FFEC;
+  border-radius: 6px; }
+
 .opportunities__menu ul {
   display: flex;
   margin-bottom: 24px;
@@ -899,7 +878,8 @@ main {
       width: 40px;
       height: 40px; }
     .burger .menu-min__close {
-      padding-top: 5px;
+      padding: 9px;
+      padding-bottom: 17px;
       margin-right: 16px;
       display: flex;
       justify-content: center;
@@ -912,16 +892,18 @@ main {
       margin: 0 auto;
       display: flex;
       justify-content: center;
-      align-items: center;
-      padding-top: 5px; }
+      align-items: center; }
     .burger .menu-min__item {
       width: 22px;
       height: 2px;
       background-color: #fff; }
     .burger .menu-min__item:nth-child(1) {
-      transform: rotate(49deg) translate(5px, 6px); }
+      transform: rotate(45deg);
+      margin-bottom: -14px; }
     .burger .menu-min__item:nth-child(2) {
-      transform: rotate(131deg) translate(-7px, 8px); }
+      display: none; }
+    .burger .menu-min__item:nth-child(3) {
+      transform: rotate(-45deg); }
   .burger .menu__wrapper {
     display: grid;
     grid-auto-flow: row;
@@ -938,8 +920,13 @@ main {
     width: 8px;
     height: 32px;
     background: #41F6D7;
-    border-radius: 5px;
-    transform: translate(-28px, -5px); }
+    border-radius: 5px; }
+    @media (min-width: 319px) {
+      .burger .menu__item-active::before {
+        transform: translate(-50px, -5px); } }
+    @media (min-width: 768px) {
+      .burger .menu__item-active::before {
+        transform: translate(-28px, -5px); } }
   .burger .contacts {
     display: grid;
     grid-auto-flow: row;
@@ -1184,9 +1171,9 @@ main {
     .feedback .form__item {
       width: 376px; } }
 
-.feedback .form__item:last-child {
+.feedback .form__item:last-of-type {
   height: 118px; }
-  .feedback .form__item:last-child::placeholder {
+  .feedback .form__item:last-of-type::placeholder {
     transform: translateY(-40px); }
 
 .feedback__agree {
