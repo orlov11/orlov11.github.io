@@ -217,7 +217,8 @@
   bottom: 24px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  cursor: pointer; }
   @media (min-width: 767px) {
     .price__btn {
       position: static;
@@ -355,7 +356,8 @@
   gap: 16px;
   padding: 16px;
   display: flex;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: 0.3s all; }
   @media (min-width: 767px) {
     .repairs__wrapper--noswiper {
       padding: 24px 24px 0 24px;
@@ -387,9 +389,11 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
 
 .repairs__show {
+  cursor: pointer;
   display: none; }
   @media (min-width: 767px) {
     .repairs__show {
@@ -402,7 +406,8 @@
       .repairs__show img {
         margin-right: 18px; }
       .repairs__show--hidden {
-        display: none; }
+        display: none;
+        cursor: pointer; }
         .repairs__show--hidden img {
           transform: rotate(180deg); } }
   .repairs__show--hidden {
@@ -429,10 +434,12 @@
 .repairs__technic {
   height: 216px;
   margin-left: 20px; }
-  @media (max-width: 767px) {
-    .repairs__technic--noswiper {
-      display: none;
-      margin-left: 0px; } }
+  .repairs__technic--noswiper {
+    transition: 0.3s all; }
+    @media (max-width: 767px) {
+      .repairs__technic--noswiper {
+        display: none;
+        margin-left: 0px; } }
   @media (min-width: 767px) {
     .repairs__technic {
       height: auto;
@@ -485,7 +492,8 @@
   width: 40px;
   height: 40px;
   background-color: transparent;
-  border: 1px solid red; }
+  border: 1px solid red;
+  cursor: pointer; }
   .repairs__btn--technic {
     align-self: flex-end; }
 
@@ -533,7 +541,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'TT Lakes'; }
+  font-family: 'TT Lakes', sans-serif; }
 
 @media (min-width: 1364px) {
   .wrapper__all {
@@ -545,16 +553,20 @@ main {
   justify-self: center; }
 
 .maxHight {
-  max-height: 750px; }
+  max-height: 750px;
+  transition: 0.3s all; }
 
 .block {
-  display: block !important; }
+  display: block !important;
+  transition: 0.3s all; }
 
 .none {
-  display: none !important; }
+  display: none !important;
+  transition: 0.3s all; }
 
 .flex {
-  display: flex !important; }
+  display: flex !important;
+  transition: 0.3s all; }
 
 .blue {
   position: absolute;
@@ -612,7 +624,6 @@ main {
 .menu__wrapper, .menu-min__wrapper {
   display: flex;
   padding: 19px 16px 23px;
-  align-items: center;
   justify-content: space-evenly;
   height: 88px; }
   @media (min-width: 767px) {
@@ -670,6 +681,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center; }
+  @media (min-width: 768px) {
+    .btn-menu__item:nth-child(1) {
+      margin-right: 16px; } }
+  @media (min-width: 768px) {
+    .btn-menu__item:nth-child(2) {
+      margin-right: 16px; } }
 
 .title--opportunities {
   position: relative; }
@@ -719,6 +736,7 @@ main {
   overflow-x: scroll; }
   @media (min-width: 1339px) {
     .opportunities__menu ul {
+      display: block;
       justify-content: space-between;
       max-width: 1380px; } }
   .opportunities__menu ul li {
@@ -731,7 +749,7 @@ main {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
-    font-weight: 500;
+    font-weight: bold;
     padding: 8px 9px 8px 16px; }
 
 .opportunities__text {
@@ -741,7 +759,7 @@ main {
   color: #1B1C21;
   text-align: left;
   margin-bottom: 16px;
-  font-weight: 300;
+  font-weight: regular;
   height: 90px;
   overflow: hidden; }
   @media (min-width: 1740px) {
@@ -797,7 +815,7 @@ main {
     align-items: center; }
   .connection {
     display: flex;
-    width: 150px;
+    width: 200px;
     align-items: center; }
     .connection__img {
       width: 20px;
@@ -972,6 +990,10 @@ main {
 @media (min-width: 1363px) {
   .btn-hamburger {
     display: none; } }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 .btn {
   width: 40px;
