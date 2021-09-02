@@ -34,6 +34,7 @@
     flex-wrap: nowrap; }
     .opportunities__menu ul li {
       margin: 0  0px 0 5px;
+      font-weight: 500;
       padding: 8px 24px 8px 22px; } }
 
 @media (max-width: 1119px) {
@@ -53,6 +54,9 @@
     height: 360px;
     padding: 4px 0 0 0;
     margin-bottom: 268px; }
+  .burger .menu__item a {
+    font-weight: 500;
+    color: #000; }
   .burger .menu__item a:hover {
     opacity: 0.5;
     transition-duration: 0.3s; }
@@ -78,6 +82,7 @@
       grid-auto-flow: column;
       width: 155px; }
     .burger .contacts__email {
+      font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px; }
@@ -85,7 +90,7 @@
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.6px;
-      font-weight: bold; }
+      font-weight: 800; }
 
 .lang {
   width: 87px;
@@ -95,7 +100,8 @@
   line-height: 24px;
   letter-spacing: -0.2px;
   color: #1B1C21;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 500; }
   .lang-active {
     color: #7E7E82; }
 
@@ -250,7 +256,9 @@
 .price__offer a {
   font-size: 16px;
   color: #1B1C21;
-  text-decoration: none; }
+  text-decoration: none;
+  font-weight: 500;
+  color: #000; }
   @media (min-width: 100px) {
     .price__offer a {
       width: 192px;
@@ -393,6 +401,7 @@
   cursor: pointer; }
 
 .repairs__show {
+  font-weight: 500;
   cursor: pointer;
   display: none; }
   @media (min-width: 767px) {
@@ -498,6 +507,7 @@
     align-self: flex-end; }
 
 .repairs__show {
+  font-weight: 500;
   display: none; }
   @media (min-width: 767px) {
     .repairs__show {
@@ -517,7 +527,9 @@
     display: none; }
 
 .repairs__text {
-  align-self: flex-start; }
+  align-self: flex-start;
+  font-weight: 500;
+  color: #000; }
 
 @media (max-width: 767px) {
   .dots {
@@ -689,6 +701,7 @@ main {
       margin-right: 16px; } }
 
 .title--opportunities {
+  font-weight: 800;
   position: relative; }
 
 @media (min-width: 1399px) {
@@ -713,7 +726,7 @@ main {
   line-height: 72px;
   letter-spacing: -0.6px;
   color: #1B1C21;
-  font-weight: bold; }
+  font-weight: 800; }
   .opportunities .title--opportunities {
     height: 41px; }
 
@@ -749,7 +762,7 @@ main {
     line-height: 24px;
     letter-spacing: -0.2px;
     color: #7E7E82;
-    font-weight: bold;
+    font-weight: 500;
     padding: 8px 9px 8px 16px; }
 
 .opportunities__text {
@@ -759,7 +772,7 @@ main {
   color: #1B1C21;
   text-align: left;
   margin-bottom: 16px;
-  font-weight: regular;
+  font-weight: 400;
   height: 90px;
   overflow: hidden; }
   @media (min-width: 1740px) {
@@ -776,6 +789,8 @@ main {
 
 .expand {
   margin-bottom: 24px; }
+  .expand__text {
+    font-weight: 500; }
   .expand__arrow {
     margin: 0 16px 0 8px; }
 
@@ -848,14 +863,15 @@ main {
   .connection {
     display: none; }
   .btn-menu {
-    width: 320px;
+    width: 370px;
     display: flex;
     align-items: center;
     font-size: 16px;
     line-height: 24px;
     text-align: right;
     letter-spacing: -0.2px;
-    color: #1B1C21; }
+    color: #1B1C21;
+    font-weight: 500; }
   .btn-menu::before {
     content: none; }
   .opportunities__text {
@@ -954,6 +970,7 @@ main {
       grid-auto-flow: column;
       width: 155px; }
     .burger .contacts__email {
+      font-weight: 500;
       font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.2px; }
@@ -961,7 +978,7 @@ main {
       font-size: 24px;
       line-height: 32px;
       letter-spacing: -0.6px;
-      font-weight: bold; }
+      font-weight: 800; }
 
 .lang {
   width: 87px;
@@ -1059,7 +1076,7 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #1B1C21;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 24px; }
   .call__title:before {
     content: '';
@@ -1165,7 +1182,7 @@ a {
   font-size: 24px;
   line-height: 32px;
   color: #1B1C21;
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 24px; }
   .feedback__title:before {
     content: '';
